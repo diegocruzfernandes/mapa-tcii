@@ -17,13 +17,13 @@ public class Demo {
 
         Data _data = new Data();
 
-        Data oData = _data.validate(dateConvert.day, dateConvert.month, dateConvert.year);
+        Data oData = _data.validarData(dateConvert.day, dateConvert.month, dateConvert.year);
         System.out.println("- Objeto Data");
         System.out.println(oData);
         System.out.println(oData.getDay() + "/" + oData.getMonth() + "/" + oData.getYear());
 
         System.out.println("- String da data com o dia anterior");
-        String lastDay = _data.lastDay(dateConvert.day, dateConvert.month, dateConvert.year);
+        String lastDay = _data.ultimoDia(dateConvert.day, dateConvert.month, dateConvert.year);
         System.out.println(lastDay);
     }
 }

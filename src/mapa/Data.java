@@ -1,5 +1,14 @@
 package mapa;
 
+/**
+ * Author: Diego Fernandes
+ * R.A.: 1751589-5
+ * Curso: Eng Soft
+ * Materia: Tópicos em Computação ||
+ * Atividade: Mapa
+ * url: https://github.com/diegocruzfernandes/mapa-tcii
+ */
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -70,8 +79,6 @@ enum Month {
 }
 
 /** Classe que manipulara as datas
- * @author Diego Fernandes
- * @version 1.05
  */
 public class Data {
     private Integer day;
@@ -132,7 +139,7 @@ public class Data {
      * @param year Ano
      * @return novo objeto Data
      */
-    public Data validate(Integer day, Integer month, Integer year) {
+    public Data validarData(Integer day, Integer month, Integer year) {
         if (isValid(day, month, year)) {
             this.day = day;
             this.month = month;
@@ -149,7 +156,7 @@ public class Data {
      * @param year
      * @return String com a data no formato BR
      */
-    public String lastDay(Integer day, Integer month, Integer year) {
+    public String ultimoDia(Integer day, Integer month, Integer year) {
         int _day = day - 1;
         int _month = month;
         int _year = year;
